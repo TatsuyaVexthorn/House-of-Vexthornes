@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>House of Vexthornes</title>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="static/Logo-01.png" alt="houseLogo">
+    </header>
+     <div class="locker">
+      
+            <label for="code"></label>
+            <input type="text" class="code" name="code1" disabled>
+        
+     
+            <label for="code"></label>
+            <input type="text" class="code" name="code2" disabled>
+      
+    
+            <label for="code"></label>
+            <input type="text" class="code" name="code3" disabled>
+     
+       
+            <label for="code"></label>
+            <input type="text" class="code" name="code4" disabled>
+        
+
+
+     </div>   
+     <script>
+        document.getElementsByClassName('code').addEventListener('focus', function (e) {
+          e.target.blur(); // Prevent keyboard by removing focus
+        });
+      </script>   
+</body>
+</html>
