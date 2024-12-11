@@ -95,6 +95,106 @@ a{
     z-index: 0;
     
 }
+.keyboardCount{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.keyboard{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 40px 40px 40px ;
+    gap: 10px;
+}
+.key{
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #E21E48;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.direct{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.direct>.button-85{
+    box-shadow: 0 0 0 1.5px #E21E48, 0 0 25px -17px #000;
+    background-color: #E21E48;
+    border: 1.5px solid;
+    border-color: #E21E48;
+}
 
+/*--------------------------------------------------mainHouse-----------------------------------------------*/
 
+.firstRow{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px ;
+    justify-content: center;
+    gap: 20px;
+}
+.room3 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+.room12 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}
+.room15 {
+    grid-column: 1 / 3;
+}
+.room16 {
+    grid-column: 5 / 7;
+}
+.room17 {
+    grid-column: 1 / 7;
+}
+.firstRow div{
+    box-shadow: 0 0 0 1.5px #E21E48, 0 0 25px -17px #000;
+    background-color: #E21E48;
+    border: 1.5px solid;
+    border-color: #E21E48;
+    border-radius: 10px;
+    z-index: 2;
 
+}
+
+@media only screen and (max-width: 680px) {
+    .firstRow{
+        display: grid;
+        grid-template-rows: 70px 70px 70px 70px 70px;
+        grid-template-columns: 70px 70px 70px 70px 70px 70px ;
+        justify-content: center;
+        gap: 20px;
+    }
+ 
+  }
+  @media only screen and (max-width: 540px ) and ( min-width:470px) {
+    .firstRow{
+        display: grid;
+        grid-template-rows: 70px 70px 70px 70px 70px;
+        grid-template-columns: 70px 70px 70px 70px 70px 70px ;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+    @media only screen and  ( max-width:470px) {
+        .firstRow {
+            display: grid;
+            grid-template-rows: 60px 60px 60px 60px 60px;
+            grid-template-columns: 60px 60px 60px 60px 60px 60px;
+            justify-content: center;
+            gap: 13px;
+        }
+ 
+  }
