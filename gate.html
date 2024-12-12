@@ -14,7 +14,6 @@
         <img class="Logo" src="Logo-01.png" alt="houseLogo">
     </header>
      <div class="locker">
-      
             <label for="code"></label>
             <input type="text" class="code" name="code1" disabled>
         
@@ -29,14 +28,25 @@
        
             <label for="code"></label>
             <input type="text" class="code" name="code4" disabled>
-        
-
-
      </div>   
-     <script>
-        document.getElementsByClassName('code').addEventListener('focus', function (e) {
-          e.target.blur(); // Prevent keyboard by removing focus
-        });
-      </script>   
+     <div class="keyboardCount">
+        <div class="keyboard">
+            <button class="key" id="key1" role="button" >1</button>
+            <button class="key" id="key2" role="button" >2</button>
+            <button class="key" id="key3" role="button" >3</button>
+            <button class="key" id="key4" role="button" >4</button>
+            <button class="key" id="key5" role="button" >5</button>
+            <button class="key" id="key6" role="button" >6</button>
+            <button class="key" id="key7" role="button" >7</button>
+            <button class="key" id="key8" role="button" >8</button>
+            <button class="key" id="key9" role="button" >9</button>
+        </div>
+     </div>
+     <div class="direct">
+        <button class="button-85" id="dir" role="button" >direct</button>
+     </div>
+
+   
+<script src="main.js"></script>
 </body>
 </html>
